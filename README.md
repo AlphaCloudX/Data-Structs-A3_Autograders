@@ -1,6 +1,8 @@
-How To Run:
+# How to Run
 
-Q2:
+### Step 1: Run the Script
+
+To execute the program, use the following command:
+
+```bash
 python q2.py
-
-Enter the .exe or .out file
