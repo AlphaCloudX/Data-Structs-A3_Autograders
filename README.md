@@ -23,6 +23,9 @@
   ```
 
   Then copy your a3q2 inside of here.
+  ```bash
+  cp /path/to/source/a3q2 .
+  ```
 
 
 ### Step 2: Provide the Executable File
