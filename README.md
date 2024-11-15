@@ -6,6 +6,7 @@ To execute the program, use the following command:
 
 ```bash
 python q2.py
+```
 
 ### Step 2: Provide the Executable File
 
