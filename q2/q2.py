@@ -15,7 +15,7 @@ def print_deepheap_with_border():
 
 # Function to remove special characters from a string
 def clean_content(content):
-    return ''.join(e for e in content if e.isalnum() or e.isspace())
+    return ''.join(e for e in content if e.isdigit())
 
 
 # Call the function to display the ASCII art with borders
