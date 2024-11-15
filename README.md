@@ -19,7 +19,7 @@
 
   Then navigate inside the folder:
   ```bash
-  cd Data-Structs-A3_Autograders-main
+  cd Data-Structs-A3_Autograders-main/q2
   ```
 
   Then copy your a3q2 inside of here.
