@@ -16,6 +16,12 @@ To execute the program, use the following command:
 python q2.py
 ```
 
+or
+
+```bash
+python3 q2.py
+```
+
 ### Additional Information
 
 - This program is designed to process **1000 test cases**.
