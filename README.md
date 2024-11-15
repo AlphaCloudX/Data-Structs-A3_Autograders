@@ -32,7 +32,7 @@
   pwd
   ```
 
-  Then navigate inside the folder:
+  Now navigate back up to where the unzipped autograder is, might require doing `c..` a few times, Then navigate inside the folder:
   ```bash
   cd Data-Structs-A3_Autograders-main/q2
   ```
