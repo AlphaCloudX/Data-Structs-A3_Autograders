@@ -1,4 +1,4 @@
-# How to Run
+# Currently broken, fixing it rn How to Run
 
 ### Step 1: Downloading the Script
 
