@@ -17,6 +17,21 @@
   unzip main.zip
   ```
 
+    Then navigate to where your MakeFile is and comile your project to get the a3q2 executable:
+  ```bash
+  cd /where/your/make/file/is
+  ```
+
+  Then compile
+  ```bash
+  make
+  ```
+
+  Then to keep track of where the executable is located run:
+  ```bash
+  pwd
+  ```
+
   Then navigate inside the folder:
   ```bash
   cd Data-Structs-A3_Autograders-main/q2
