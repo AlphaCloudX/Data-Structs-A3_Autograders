@@ -2,18 +2,12 @@ import csv
 import subprocess
 
 msg = """
-
-8888888888                           888    d8b                        8888888888                           888                    
-888                                  888    Y8P                        888                                  888                    
-888                                  888                               888                                  888                    
-8888888    .d88888 888  888  8888b.  888888 888  .d88b.  88888b.       8888888    .d88888 888  888  8888b.  888888 .d88b.  888d888 
-888       d88" 888 888  888     "88b 888    888 d88""88b 888 "88b      888       d88" 888 888  888     "88b 888   d88""88b 888P"   
-888       888  888 888  888 .d888888 888    888 888  888 888  888      888       888  888 888  888 .d888888 888   888  888 888     
-888       Y88b 888 Y88b 888 888  888 Y88b.  888 Y88..88P 888  888      888       Y88b 888 Y88b 888 888  888 Y88b. Y88..88P 888     
-8888888888 "Y88888  "Y88888 "Y888888  "Y888 888  "Y88P"  888  888      8888888888 "Y88888  "Y88888 "Y888888  "Y888 "Y88P"  888     
-               888                                                                    888                                          
-               888                                                                    888                                          
-               888                                                                    888                                          
+d88888b  .d88b.  db    db  .d8b.  d888888b d888888b  .d88b.  d8b   db      d88888b  .d88b.  db    db  .d8b.  d888888b  .d88b.  d8888b. 
+88'     .8P  Y8. 88    88 d8' `8b `~~88~~'   `88'   .8P  Y8. 888o  88      88'     .8P  Y8. 88    88 d8' `8b `~~88~~' .8P  Y8. 88  `8D 
+88ooooo 88    88 88    88 88ooo88    88       88    88    88 88V8o 88      88ooooo 88    88 88    88 88ooo88    88    88    88 88oobY' 
+88~~~~~ 88    88 88    88 88~~~88    88       88    88    88 88 V8o88      88~~~~~ 88    88 88    88 88~~~88    88    88    88 88`8b   
+88.     `8P  d8' 88b  d88 88   88    88      .88.   `8b  d8' 88  V888      88.     `8P  d8' 88b  d88 88   88    88    `8b  d8' 88 `88. 
+Y88888P  `Y88'Y8 ~Y8888P' YP   YP    YP    Y888888P  `Y88P'  VP   V8P      Y88888P  `Y88'Y8 ~Y8888P' YP   YP    YP     `Y88P'  88   YD 
 
 By Michael
 """
@@ -30,7 +24,7 @@ failed_lines = []
 def run_a3(option, expression):
     # Open A3.exe with the equation argument
     process = subprocess.Popen(
-        ['A3.exe', expression],
+        [programName, expression],
         stdin=subprocess.PIPE,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
