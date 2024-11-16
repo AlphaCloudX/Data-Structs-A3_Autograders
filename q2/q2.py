@@ -4,13 +4,24 @@ import subprocess
 
 
 def print_deepheap_with_border():
-    print("+---------------------------------------------------------+")
-    print("| DDDD  EEEEE  EEEEE  PPPP     H   H  EEEEE  AAAAA  PPPP  |")
-    print("| D   D E      E      P   P    H   H  E     A     A P   P |")
-    print("| D   D EEEE   EEEE   PPPP     HHHHH  EEEE  AAAAAAA PPPP  |")
-    print("| D   D E      E      P        H   H  E     A     A P     |")
-    print("| DDDD  EEEEE  EEEEE  P        H   H  EEEEE A     A P     |")
-    print("+---------------------------------------------------------+")
+    msg = """
+    
+8888888b.                                  888    888                            
+888  "Y88b                                 888    888                            
+888    888                                 888    888                            
+888    888  .d88b.   .d88b.  88888b.       8888888888  .d88b.   .d88b.  88888b.  
+888    888 d8P  Y8b d8P  Y8b 888 "88b      888    888 d8P  Y8b d8P  Y8b 888 "88b 
+888    888 88888888 88888888 888  888      888    888 88888888 88888888 888  888 
+888  .d88P Y8b.     Y8b.     888 d88P      888    888 Y8b.     Y8b.     888 d88P 
+8888888P"   "Y8888   "Y8888  88888P"       888    888  "Y8888   "Y8888  88888P"  
+                             888                                        888      
+                             888                                        888      
+                             888                                        888      
+
+By Michael
+    """
+
+    print(msg)
 
 
 # Function to remove special characters from a string
