@@ -76,16 +76,12 @@ with open('data.csv', mode='r', newline='') as file:
         print(f"Processing expression: {equation}")
 
         for option in [1, 2, 3, 4]:
-            recieved = run_a3(option, equation)
+            received = run_a3(option, equation)
 
-
-
-
-
-            if row[option] in recieved:
+            if row[option] in received:
                 print(f"\033[32mOption: {option}\033[0m")
                 print(f"\033[32m[EXPECTED]:{row[option]}\033[0m")
-                print(f"\033[32m[RECEIVED]:{parsed(recieved)}\033[0m")
+                print(f"\033[32m[RECEIVED]:{parsed(received)}\033[0m")
                 print(f"\033[32mPASS\033[0m")
                 passes += 1
 
@@ -94,9 +90,9 @@ with open('data.csv', mode='r', newline='') as file:
                 failed_lines.append(equation)
                 print(f"\033[31mOption: {option}\033[0m")
                 print(f"\033[31m[EXPECTED]:{row[option]}\033[0m")
-                print(f"\033[31m[RECEIVED]:{parsed(recieved)}\033[0m")
+                print(f"\033[31m[RECEIVED]:{parsed(received)}\033[0m")
                 print("RAW OUTPUT FOR DEBUGGING:")
-                print(recieved)
+                print(received)
                 print(f"\033[31mFAIL\033[0m")
 
         print("\n\n")
