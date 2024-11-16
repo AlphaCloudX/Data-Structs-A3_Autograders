@@ -31,13 +31,20 @@
   ```bash
   pwd
   ```
+  
+  Back up to where the unzipped autograder is, might require doing `c..` a few times, then navigate to the folder for the grader you want to use.
+  
+  Question 1 Autograder:
+  ```bash
+  cd Data-Structs-A3_Autograders-main/q1
+  ```
 
-  Now navigate back up to where the unzipped autograder is, might require doing `c..` a few times, Then navigate inside the folder:
+  Question 2 Autograder:
   ```bash
   cd Data-Structs-A3_Autograders-main/q2
   ```
 
-  Then copy your a3q2 inside of here.
+  Then copy your a3q1 or a3q2 file inside the current directory here.
   ```bash
   cp /path/to/source/a3q2 .
   ```
@@ -45,25 +52,36 @@
 
 ### Step 2: Provide the Executable File
 
-Before running the script, ensure that the `.exe` or `.out` file is copied into the `q2` folder. Can be done via terminal or gui.
+Before running the script, ensure that the `.exe` or `.out` file is copied into the `q1` or `q2` folder(depending on the autograder being used). Can be done via terminal or gui.
 
 Once the file is in the folder, when prompted, enter the filename of the executable (e.g., `yourfile.exe` or `yourfile.out`).
 
 ### Step 2: Run the Script
 
-To execute the program, use the following command:
+To execute the program, run the following python command:
+
+Do note that q1.py will only work when inside the q1 folder as it's for question 1.
+
+The same way, q2.py will only work when inside the q2 folder as it's for question 2.
 
 ```bash
+python q1.py
 python q2.py
 ```
 
 or
 
 ```bash
+python3 q1.py
 python3 q2.py
 ```
 
 ### Additional Information
 
+Question 1:
+- 360 Test Cases
+- Super Sensitive To The Main and Format So Debugging Print Statements Are Enabled
+
+Question 2:
 - This program is designed to process **1000 test cases**.
-- Currently Testing To Validate Results
+- Fairly Positive This Is Fully Correct
