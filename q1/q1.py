@@ -1,5 +1,6 @@
 import csv
 import subprocess
+import os
 
 msg = """
 d88888b  .d88b.  db    db  .d8b.  d888888b d888888b  .d88b.  d8b   db      d88888b  .d88b.  db    db  .d8b.  d888888b  .d88b.  d8888b. 
@@ -15,6 +16,8 @@ By Michael
 print(msg)
 programName = input("What is the program name:")
 
+exe_path = os.path.join(os.getcwd(), programName)
+
 # Initialize counters for passes, fails, and list for failed files
 passes = 0
 fails = 0
@@ -24,7 +27,7 @@ failed_lines = []
 def run_a3(option, expression):
     # Open A3.exe with the equation argument
     process = subprocess.Popen(
-        [programName, expression],
+        [exe_path, expression],
         stdin=subprocess.PIPE,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
